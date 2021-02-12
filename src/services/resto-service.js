@@ -36,6 +36,9 @@ export default class RestoService {
         if (!response.ok){
             throw new Error('json error');
         }
+        if (response.ok) {
+            alert(`Your order has been placed`);
+        }
     }
 
     async getOrderNumber(){
